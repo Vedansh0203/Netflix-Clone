@@ -1,0 +1,829 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+/* --------------------------------------------imports--------------------------------------------- */
+
+html{
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "manrope", sans-serif;
+}
+.main {
+    background-image: url(Assets/images/BG.jpg);
+    height: 100vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main .box {
+    opacity: 0.68;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    top: 0;
+    
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+    max-width: 80vw;
+    height: 68px;
+    position: relative;
+    padding-top: 10px;
+}
+
+.navright {
+    display: flex;
+    gap: 10px;
+}
+
+.navright button {
+    height: 33px;
+    /* display: flex; */
+    /* gap: 30px; */
+}
+
+.navright .langbutton {
+    width: 130px;
+    background-color: rgba(20, 20, 20, 0.606);
+    color: white;
+    border: 1px solid rgb(112, 112, 112);
+    border-radius: 4px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.navright .langbutton svg {
+    padding-right: 7px;
+}
+.navright .langbutton .downarrowbasic{
+    padding-left: 7px;
+}
+
+.navright .signinbutton {
+    width: 75px;
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+}
+
+.contentbox {
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+}
+
+.content {
+    text-align: center;
+    position: absolute;
+    width: 38vw;
+}
+
+.info {
+    padding-bottom: 16px;
+}
+
+.content .info .textmain {
+    font-weight: 1000;
+    font-size: 53px;
+    color: white;
+}
+
+.content .info .secondmain {
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+    padding-top: 16px;
+}
+
+.content .info .thirdmain {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    padding-top: 28px;
+}
+
+.infobuttons {
+    display: flex;
+    gap: 6px;
+}
+
+.infobuttons .email {
+    background-color: rgba(19, 19, 19, 0.746);
+    color: rgb(176, 175, 175);
+    width: 540px;
+    height: 57px;
+    border: 1px solid rgb(117, 116, 116);
+    border-radius: 4px;
+    text-align: left;
+    padding-left: 13px;
+    font-size: 17px;
+    
+}
+
+.infobuttons .getstarted {
+    width: 290px;
+    height: 58px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.secondmainbox{
+    background-color: black;
+    /* display: flex; */
+    /* justify-content: flex-start; */
+}
+.secondmainbox div{
+    margin: 20px;
+}
+.secondmainbox span{
+    color: white;
+    font-size: 23px;
+    font-weight: 700;
+    padding-left: 150px;
+    
+}
+.movielist ul{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-bottom: 40px;
+}
+.movielist ul li{
+    border-radius: 10px;
+    overflow: hidden;
+    /* border: 2px solid white; */
+}
+.reasonlistcontainer{
+    /* border: 2px solid rgb(38, 0, 255); */
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.reasonlistcontainer .containertext{
+    margin: 0;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 12px;
+    width: 296px;
+    height: 278px;
+    position: relative;
+}
+.reasonlistcontainer .containertext .contentcontainer{
+    color: white;
+}
+.contentcontainer h3{
+    font-weight: 1500;
+    font-size: 23px;
+    padding-bottom: 10px;
+}
+.contentcontainer .para{
+    font-weight: 1500;
+}
+.svgbox1{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.svgbox2{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.svgbox3{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.svgbox4{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.questionscontainer{
+    
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+}
+.questionscontainer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    list-style-type: none;
+    color: white;
+    width: 100%;
+    max-width: 80vw;
+    margin: 0 auto;
+}
+.questionscontainer ul li{
+    height: 90px;
+    background-color: rgb(42, 42, 42);
+    font-size: 24px;
+    font-weight: 600;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 24px;
+}
+.logintext{
+    padding-top: 60px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+.second{
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.sgs{
+    width: 200px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.contactcontainer{
+    background-color: black;
+    color: rgb(174, 174, 174);
+    
+}
+.contactcontainer span{
+    font-weight: 600;
+    padding-left: 150px;
+}
+.linkscontainer{
+    padding-top: 10p;
+    display: grid;
+    justify-content: center;
+    width: 86vw;
+    grid-template-columns: 220px 220px 220px 220px;
+    gap: 50px;
+}
+.gridcontainer{
+    padding-bottom: 50px;
+    /* height: 200px; */
+    /* border: 2px solid white; */
+}
+.gridcontainer .linnk{
+    font-size: 16px;
+    font-weight: 400;
+}
+a{
+    color: rgb(174, 174, 174);
+}
+.secondmainbox .infobuttons {
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+.languageswitch .langbutton{
+    height: 35px;
+    width: 120px;
+    background-color: rgba(20, 20, 20, 0.606);
+    color: white;
+    border: 1px solid rgb(112, 112, 112);
+    border-radius: 4px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+.languageswitch p{
+    padding-top: 50px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.languageswitch .langbutton svg {
+    padding-right: 7px;
+    padding-left: 2px;
+}
+.languageswitch .langbutton .downarrowbasic{
+    padding-left: 7px;
+}
+.languageswitch{
+    padding-bottom: 60px;
+    padding-left: 145px;
+}
+
+
+@media (max-width: 1024px) {
+    nav {
+        max-width: 90vw;
+        padding: 10px 20px;
+        height: auto;
+    }
+
+    .content {
+        width: 85vw;
+        padding: 0 20px;
+    }
+
+    .content .info .textmain {
+        font-size: 42px;
+    }
+
+    .content .info .secondmain {
+        font-size: 18px;
+    }
+
+    .content .info .thirdmain {
+        font-size: 14px;
+    }
+
+    .infobuttons {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .infobuttons .email {
+        width: 100%;
+        max-width: 450px;
+        flex: 1 1 auto;
+    }
+
+    .infobuttons .getstarted {
+        width: 100%;
+        max-width: 220px;
+        flex: 0 0 auto;
+        font-size: 18px;
+    }
+
+    .secondmainbox span {
+        padding-left: 30px;
+        font-size: 20px;
+    }
+
+    .movielist ul {
+        gap: 30px;
+        padding: 0 20px;
+        flex-wrap: wrap;
+    }
+
+    .movielist ul li {
+        max-width: 200px;
+        height: auto;
+    }
+
+    .movielist ul li img {
+        width: 100%;
+        height: auto;
+    }
+
+    .reasonlistcontainer {
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .reasonlistcontainer .containertext {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        padding: 20px;
+    }
+
+    .contentcontainer h3 {
+        font-size: 20px;
+    }
+
+    .contentcontainer .para {
+        font-size: 14px;
+    }
+
+    .svgbox1, .svgbox2, .svgbox3, .svgbox4 {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        margin-top: 15px;
+    }
+
+    .linkscontainer {
+        width: 90vw;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .contactcontainer span {
+        padding-left: 30px;
+    }
+
+    .questionscontainer ul {
+        max-width: 90vw;
+    }
+
+    .questionscontainer ul li {
+        height: auto;
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    .sgs {
+        width: 100%;
+        max-width: 180px;
+        font-size: 18px;
+    }
+
+    .languageswitch {
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        max-width: 95vw;
+        padding: 8px 15px;
+        flex-wrap: wrap;
+        height: auto;
+        gap: 15px;
+    }
+
+    nav span img {
+        width: 100px;
+    }
+
+    .navright {
+        gap: 8px;
+    }
+
+    .navright .langbutton {
+        width: 110px;
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .navright .signinbutton {
+        width: 60px;
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .contentbox {
+        padding-top: 80px;
+    }
+
+    .content {
+        width: 90vw;
+        padding: 0 15px;
+    }
+
+    .content .info .textmain {
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .content .info .secondmain {
+        font-size: 16px;
+        padding-top: 10px;
+    }
+
+    .content .info .thirdmain {
+        font-size: 13px;
+        padding-top: 15px;
+    }
+
+    .infobuttons {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .infobuttons .email {
+        width: 100%;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .infobuttons .getstarted {
+        width: 100%;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .secondmainbox div {
+        margin: 15px;
+    }
+
+    .secondmainbox span {
+        padding-left: 15px;
+        font-size: 18px;
+    }
+
+    .movielist ul {
+        gap: 15px;
+        padding: 0 15px;
+        overflow-x: auto;
+    }
+
+    .movielist ul li {
+        min-width: 150px;
+        max-width: 150px;
+        height: auto;
+    }
+
+    .movielist ul li img {
+        width: 100%;
+        height: auto;
+    }
+
+    .reasonlistcontainer {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0 15px;
+        align-items: stretch;
+    }
+
+    .reasonlistcontainer .containertext {
+        width: 100%;
+        max-width: none;
+        height: auto;
+        padding: 15px;
+        border-width: 1px;
+        position: relative;
+    }
+
+    .reasonlistcontainer .containertext .contentcontainer {
+        text-align: center;
+    }
+
+    .contentcontainer h3 {
+        font-size: 18px;
+    }
+
+    .contentcontainer .para {
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .svgbox1, .svgbox2, .svgbox3, .svgbox4 {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .questionscontainer ul {
+        max-width: 95vw;
+    }
+
+    .questionscontainer ul li {
+        height: auto;
+        padding: 15px;
+        font-size: 16px;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .questionscontainer ul li p {
+        text-align: left;
+        flex: 1;
+    }
+
+    .questionscontainer ul li .svgg {
+        flex-shrink: 0;
+    }
+
+    .questionscontainer ul li .svgg svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .linkscontainer {
+        width: 95vw;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .gridcontainer {
+        padding-bottom: 20px;
+    }
+
+    .gridcontainer .linnk {
+        font-size: 14px;
+    }
+
+    .contactcontainer span {
+        padding-left: 15px;
+        font-size: 14px;
+    }
+
+    .logintext {
+        padding-top: 30px;
+        font-size: 14px;
+    }
+
+    .second {
+        padding-bottom: 0;
+    }
+
+    .sgs {
+        width: 100%;
+        max-width: 150px;
+        font-size: 16px;
+        height: 50px;
+    }
+
+    .languageswitch {
+        padding-bottom: 40px;
+        padding-left: 15px;
+    }
+
+    .languageswitch .langbutton {
+        height: 32px;
+        width: 100px;
+        font-size: 12px;
+    }
+
+    .languageswitch p {
+        padding-top: 20px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        max-width: 100%;
+        padding: 5px 10px;
+    }
+
+    nav span img {
+        width: 80px;
+    }
+
+    .navright {
+        gap: 5px;
+    }
+
+    .navright .langbutton {
+        width: 90px;
+        font-size: 11px;
+        padding: 4px;
+        display: none;
+    }
+
+    .navright .signinbutton {
+        width: 55px;
+        font-size: 11px;
+        padding: 5px;
+    }
+
+    .contentbox {
+        padding-top: 60px;
+    }
+
+    .content {
+        width: 95vw;
+    }
+
+    .content .info .textmain {
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    .content .info .secondmain {
+        font-size: 14px;
+    }
+
+    .content .info .thirdmain {
+        font-size: 12px;
+    }
+
+    .infobuttons .email,
+    .infobuttons .getstarted {
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .secondmainbox span {
+        padding-left: 10px;
+        font-size: 16px;
+    }
+
+    .movielist ul {
+        gap: 10px;
+        padding: 0 10px;
+    }
+
+    .movielist ul li {
+        min-width: 120px;
+        max-width: 120px;
+    }
+
+    .reasonlistcontainer {
+        padding: 0 10px;
+    }
+
+    .reasonlistcontainer .containertext {
+        padding: 12px;
+        border-radius: 8px;
+        position: relative;
+    }
+
+    .reasonlistcontainer .containertext .contentcontainer {
+        text-align: center;
+    }
+
+    .contentcontainer h3 {
+        font-size: 16px;
+    }
+
+    .contentcontainer .para {
+        font-size: 12px;
+    }
+
+    .svgbox1, .svgbox2, .svgbox3, .svgbox4 {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .svgbox1 svg, .svgbox2 svg, .svgbox3 svg, .svgbox4 svg {
+        width: 50px;
+        height: 50px;
+    }
+
+    .questionscontainer ul {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .questionscontainer ul li {
+        padding: 12px;
+        font-size: 14px;
+        border-radius: 4px;
+    }
+
+    .linkscontainer {
+        width: 100%;
+        padding: 0 10px;
+        gap: 15px;
+    }
+
+    .gridcontainer .linnk {
+        font-size: 13px;
+    }
+
+    .contactcontainer span {
+        padding-left: 10px;
+        font-size: 13px;
+    }
+
+    .logintext {
+        padding-top: 20px;
+        font-size: 13px;
+    }
+
+    .sgs {
+        max-width: 130px;
+        font-size: 14px;
+        height: 45px;
+    }
+
+    .languageswitch {
+        padding-bottom: 30px;
+        padding-left: 10px;
+    }
+
+    .languageswitch .langbutton {
+        display: inline-block;
+        width: 90px;
+        height: 30px;
+        font-size: 11px;
+    }
+
+    .languageswitch p {
+        padding-top: 15px;
+        font-size: 11px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
